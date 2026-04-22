@@ -52,5 +52,5 @@ def test_curved_score_negative_bonus():
         curved_score(80, -5)
 
 def test_curved_score_invalid_bonus_type():
-    with pytest.raises(ValueError):
+    with pytest.raises(TypeError):
         curved_score(80, "hello")
